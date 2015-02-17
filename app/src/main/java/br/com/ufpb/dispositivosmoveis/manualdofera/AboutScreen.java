@@ -6,11 +6,14 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v7.app.ActionBar;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 
-public class AboutScreen extends ActionBarActivity {
+public class AboutScreen extends ActionBarActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,5 +61,12 @@ public class AboutScreen extends ActionBarActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, aboutFuncions);
         ListView listView = (ListView)findViewById(R.id.listAbout);
         listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position == 0) Toast.makeText(getBaseContext(), "Coming Soon", Toast.LENGTH_SHORT).show();
+                else Toast.makeText(getBaseContext(), "Coming Soon", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

@@ -12,9 +12,7 @@ import android.widget.Spinner;
 
 public class StartScreen extends Activity {
 
-    private Spinner combo_course;
     private Typeface typeface;
-    private Button button;
 
 
     @Override
@@ -27,7 +25,7 @@ public class StartScreen extends Activity {
     }
 
     private void createComboCourses() {
-        combo_course = (Spinner)findViewById(R.id.combo_course);
+        Spinner combo_course = (Spinner) findViewById(R.id.combo_course);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.courses, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -36,13 +34,13 @@ public class StartScreen extends Activity {
     }
 
     private void buttonTypeFace(){
-
-        button = (Button)findViewById(R.id.choose_start);
-        button.setTypeface(typeface);
+        Button button = (Button) findViewById(R.id.choose_start);
+        button.setTypeface(this.typeface);
     }
 
     public void nextScreen(View v){
         Intent intent = new Intent(StartScreen.this, ListFuncions.class);
         startActivity(intent);
+        StartScreen.this.finish();
     }
 }
