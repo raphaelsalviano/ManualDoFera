@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base da aplicação do tema. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- A cor principal do app. Por padrão, esta é a cor aplicada a ActionBar -->
+        <item name="colorPrimary">@color/md_blue_500</item>
+        <!-- Variante mais escura da cor primária. Por padrão, esta é a cor aplicada a barra de
+         status (via statusBarColor) e a barra de navegação (via navigationBarColor).-->
+        <item name="colorPrimaryDark">@color/md_blue_700</item>
+        <!-- Complemento de brilho para a cor principal. por padrão, esta é a cor aplicada
+        para os controles de enquadramento (via colorControlActivated). -->
+        <item name="colorAccent">@color/md_red_A200</item>
+        <!-- A cor aplicada aos destaques de controle (ex. ondas, seletores de lista...)  -->
+        <item name="colorControlHighlight">@color/md_red_400</item>
+
+    </style>
+
+    <style name="AppThemeSplash" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- A cor principal do app. Por padrão, esta é a cor aplicada a ActionBar -->
+        <item name="colorPrimary">@color/md_blue_500</item>
+        <!-- Variante mais escura da cor primária. Por padrão, esta é a cor aplicada a barra de
+         status (via statusBarColor) e a barra de navegação (via navigationBarColor).-->
+        <item name="colorPrimaryDark">@color/md_blue_500</item>
+
+    </style>
+
+
+
+
+</resources>
