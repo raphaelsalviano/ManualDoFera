@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.ufpb.dispositivosmoveis.manualdofera.StartScreen"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/start_screen">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ic_top"
+        android:src="@drawable/ic_top"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitStart"
+        android:layout_above="@+id/choose_course"
+        android:layout_alignParentStart="true" />
+
+    <view
+        class="br.com.ufpb.dispositivosmoveis.manualdofera.RobotoLightTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/app_name"
+        android:id="@+id/app_name"
+        android:textSize="34sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:textColor="@color/md_text_white"/>
+
+    <view
+        class="br.com.ufpb.dispositivosmoveis.manualdofera.RobotoLightTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/choose_course"
+        android:id="@+id/choose_course"
+        android:textColor="@color/md_text"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/combo_course"
+        android:layout_below="@+id/choose_course"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp" />
+
+    <Button
+        android:layout_width="88dp"
+        android:layout_height="39dp"
+        android:text="@string/choose"
+        android:id="@+id/choose_start"
+        android:background="?attr/colorPrimary"
+        android:textColor="@color/md_text_white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:onClick="nextScreen"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/combo_course"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp" />
+
+</RelativeLayout>
