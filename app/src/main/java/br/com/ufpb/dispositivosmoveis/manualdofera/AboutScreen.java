@@ -6,12 +6,11 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v7.app.ActionBar;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 
 public class AboutScreen extends ActionBarActivity {
-
-    private ActionBar actionBar;
-    private Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +18,7 @@ public class AboutScreen extends ActionBarActivity {
         setContentView(R.layout.about_screen);
 
         homeBack();
+        createListView();
     }
 
 
@@ -38,7 +38,7 @@ public class AboutScreen extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == android.R.id.home) {
-            intent = new Intent(this, ListFuncions.class);
+            Intent intent = new Intent(this, ListFuncions.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         }
@@ -47,9 +47,16 @@ public class AboutScreen extends ActionBarActivity {
     }
 
     private void homeBack(){
-        actionBar = getSupportActionBar();
+        ActionBar actionBar = getSupportActionBar();
         if (actionBar != null){
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
+    }
+
+    private void createListView(){
+        String[] aboutFuncions = getResources().getStringArray(R.array.about_listView);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, aboutFuncions);
+        ListView listView = (ListView)findViewById(R.id.listAbout);
+        listView.setAdapter(adapter);
     }
 }

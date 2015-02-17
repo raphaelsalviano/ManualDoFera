@@ -27,4 +27,12 @@
         <item>Sobre o curso</item>
     </string-array>
 
+    <string name="copyright1">Copyright © 2015 Disposivos Móveis Inc</string>
+    <string name="copyright2">Todos os direitos reservados</string>
+    <string name="app_version">Versão 0.1.15</string>
+    <string-array name="about_listView">
+        <item>Ajuda / FAQ</item>
+        <item>Contate-nos</item>
+    </string-array>
+
 </resources>
