@@ -4,9 +4,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-/**
- * Created by Raphael on 17/02/2015.
- */
+
 public class ManualDoAlunoDBCode extends SQLiteOpenHelper{
 
     private BDCode bdCode;

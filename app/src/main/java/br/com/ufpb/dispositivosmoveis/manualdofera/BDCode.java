@@ -1,15 +1,10 @@
 package br.com.ufpb.dispositivosmoveis.manualdofera;
 
-import android.content.Context;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Raphael on 16/02/2015.
- */
+
 public class BDCode{
 
     public String[] getCreateTables(){
