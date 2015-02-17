@@ -1,6 +1,8 @@
 package br.com.ufpb.dispositivosmoveis.manualdofera;
 
 
+import android.app.ActionBar;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -13,6 +15,8 @@ import java.util.ArrayList;
 
 
 public class ListFuncions extends ActionBarActivity {
+
+    private Intent intent;
 
 
     @Override
@@ -43,7 +47,9 @@ public class ListFuncions extends ActionBarActivity {
             Toast.makeText(this, "Coming Soon",Toast.LENGTH_SHORT).show();
         }
         else if(id == R.id.about){
-            Toast.makeText(this, "Version 0.2",Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "Version 0.2",Toast.LENGTH_SHORT).show();
+            intent = new Intent(ListFuncions.this, AboutScreen.class);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);
@@ -56,5 +62,6 @@ public class ListFuncions extends ActionBarActivity {
         listView.setAdapter(adapter);
 
     }
+
 
 }

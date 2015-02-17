@@ -26,6 +26,11 @@
             android:label="@string/title_activity_list_funcions"
             android:theme="@style/AppTheme" >
         </activity>
+        <activity
+            android:name=".AboutScreen"
+            android:label="@string/title_activity_about_screen"
+            android:theme="@style/AppTheme">
+        </activity>
     </application>
 
 </manifest>
