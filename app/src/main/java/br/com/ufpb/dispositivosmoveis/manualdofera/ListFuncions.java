@@ -1,7 +1,6 @@
 package br.com.ufpb.dispositivosmoveis.manualdofera;
 
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -11,12 +10,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
 
 
 public class ListFuncions extends ActionBarActivity {
-
-    private Intent intent;
 
 
     @Override
@@ -48,7 +44,7 @@ public class ListFuncions extends ActionBarActivity {
         }
         else if(id == R.id.about){
             //Toast.makeText(this, "Version 0.2",Toast.LENGTH_SHORT).show();
-            intent = new Intent(ListFuncions.this, AboutScreen.class);
+            Intent intent = new Intent(ListFuncions.this, AboutScreen.class);
             startActivity(intent);
         }
 
@@ -62,6 +58,5 @@ public class ListFuncions extends ActionBarActivity {
         listView.setAdapter(adapter);
 
     }
-
 
 }
