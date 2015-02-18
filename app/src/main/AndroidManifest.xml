@@ -29,7 +29,7 @@
         <activity
             android:name=".AboutScreen"
             android:label="@string/title_activity_about_screen"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme" >
         </activity>
     </application>
 

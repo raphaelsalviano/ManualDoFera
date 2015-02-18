@@ -14,7 +14,6 @@ import android.widget.Toast;
 
 public class ListFuncions extends ActionBarActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,7 +55,6 @@ public class ListFuncions extends ActionBarActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listFuncions);
         ListView listView = (ListView)findViewById(R.id.listFuncions);
         listView.setAdapter(adapter);
-
     }
 
 }
