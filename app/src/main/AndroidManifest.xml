@@ -31,6 +31,11 @@
             android:label="@string/title_activity_about_screen"
             android:theme="@style/AppTheme" >
         </activity>
+        <activity
+            android:name=".FeedbackScreen"
+            android:label="@string/title_activity_feedback_screen"
+            android:theme="@style/AppTheme">
+        </activity>
     </application>
 
 </manifest>

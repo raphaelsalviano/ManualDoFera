@@ -1,24 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- Title Activitys -->
+    <string name="title_activity_start_screen">StartScreen</string>
+    <string name="title_activity_list_funcions"> </string>
+    <string name="title_activity_about_screen"> </string>
+    <string name="title_activity_feedback_screen"> </string>
+
+    <!-- ActionSettings -->
+    <string name="action_settings">Settings</string>
+
+    <!-- App Strings -->
     <string name="app_name">Manual do Fera</string>
     <string name="choose_course">Escolha seu curso:</string>
-    <string name="title_activity_start_screen">StartScreen</string>
-
-    <string-array name="courses">
-        <item>Lic. Ciência da Computação</item>
-        <item>Bach. Sistemas da Informação</item>
-    </string-array>
-
-    <string name="choose">Ok</string>
-    <string name="title_activity_list_funcions"></string>
+    <string name="choose">OK</string>
     <string name="coming_soon">Em breve!</string>
     <string name="hello_world">Hello world!</string>
     <string name="feedback">Feedback</string>
     <string name="about">Sobre</string>
-    <string name="title_activity_about_screen"></string>
-    <string name="search">Buscar</string>
-    <string name="action_setting">Settings</string>
+    <string name="copyright1">Copyright © 2015 Disposivos Móveis Inc</string>
+    <string name="copyright2">Todos os direitos reservados</string>
+    <string name="app_version">Versão 0.1.15</string>
+    <string name="feedback_view1">Qual nota você daria ao Manual do Fera?</string>
+    <string name="feedback_view2">Explique por que você deu essa pontuação</string>
+    <string name="button_send">Enviar</string>
+    <string name="note0">0</string>
+    <string name="note1">5</string>
+    <string name="note2">10</string>
+
+    <!-- Arrays -->
+    <string-array name="courses">
+        <item>Lic. Ciência da Computação</item>
+        <item>Bach. Sistemas da Informação</item>
+    </string-array>
 
     <string-array name="funcions">
         <item>Calcular CRE</item>
@@ -28,15 +42,9 @@
         <item>Sobre o curso</item>
     </string-array>
 
-    <string name="copyright1">Copyright © 2015 Disposivos Móveis Inc</string>
-    <string name="copyright2">Todos os direitos reservados</string>
-    <string name="app_version">Versão 0.1.15</string>
-
     <string-array name="about_listView">
         <item>Ajuda / FAQ</item>
         <item>Contate-nos</item>
     </string-array>
-
-    <string name="title_activity_sub_funcion_screen"></string>
 
 </resources>

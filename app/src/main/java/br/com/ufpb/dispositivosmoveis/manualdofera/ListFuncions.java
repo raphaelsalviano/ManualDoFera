@@ -8,7 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
+
 
 
 
@@ -32,18 +32,16 @@ public class ListFuncions extends ActionBarActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        Intent intent;
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.feedback) {
-            Toast.makeText(this, "Coming Soon",Toast.LENGTH_SHORT).show();
-        }
-        else if(id == R.id.about){
+        if(id == R.id.about){
             //Toast.makeText(this, "Version 0.2",Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(ListFuncions.this, AboutScreen.class);
+            intent = new Intent(ListFuncions.this, AboutScreen.class);
             startActivity(intent);
         }
 
@@ -56,5 +54,4 @@ public class ListFuncions extends ActionBarActivity {
         ListView listView = (ListView)findViewById(R.id.listFuncions);
         listView.setAdapter(adapter);
     }
-
 }

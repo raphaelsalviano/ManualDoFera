@@ -64,8 +64,12 @@ public class AboutScreen extends ActionBarActivity{
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if(position == 0) Toast.makeText(getBaseContext(), "Coming Soon", Toast.LENGTH_SHORT).show();
-                else Toast.makeText(getBaseContext(), "Coming Soon", Toast.LENGTH_SHORT).show();
+                if(position == 0){
+                    Toast.makeText(getBaseContext(), "Coming Soon", Toast.LENGTH_SHORT).show();
+                }else{
+                    Intent intent = new Intent(AboutScreen.this, FeedbackScreen.class);
+                    startActivity(intent);
+                }
             }
         });
     }

@@ -3,13 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="br.com.ufpb.dispositivosmoveis.manualdofera.ListFuncions">
 
-
-    <item
-        android:id="@+id/feedback"
-        android:title="@string/feedback"
-        android:orderInCategory="100"
-        app:showAsAction="never" />
-
     <item
         android:id="@+id/about"
         android:title="@string/about"
