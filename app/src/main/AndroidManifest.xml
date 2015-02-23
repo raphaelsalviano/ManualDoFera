@@ -37,9 +37,9 @@
             android:theme="@style/AppTheme" >
         </activity>
         <activity
-            android:name=".SubFuncionScreen"
-            android:label=""
-            android:theme="@style/AppTheme">
+            android:name=".FuncionsDisciplinasScreen"
+            android:label="@string/title_activity_sub_funcion_screen"
+            android:theme="@style/AppTheme" >
         </activity>
     </application>
 

@@ -44,7 +44,7 @@ public class FeedbackScreen extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == android.R.id.home) {
-            Intent intent = new Intent(this, ListFuncions.class);
+            Intent intent = new Intent(this, AboutScreen.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         }

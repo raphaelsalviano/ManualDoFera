@@ -4,8 +4,10 @@
     <!-- Title Activitys -->
     <string name="title_activity_start_screen">StartScreen</string>
     <string name="title_activity_list_funcions"> </string>
-    <string name="title_activity_about_screen"> </string>
-    <string name="title_activity_feedback_screen"> </string>
+    <string name="title_activity_about_screen">Sobre</string>
+    <string name="title_activity_feedback_screen">Feedback</string>
+    <string name="title_funcions_disciplinas_screen">Disciplinas</string>
+    <string name="title_activity_sub_funcion_screen">Disciplinas</string>
 
     <!-- ActionSettings -->
     <string name="action_settings">Settings</string>
@@ -44,8 +46,13 @@
 
     <string-array name="about_listView">
         <item>Ajuda / FAQ</item>
-        <item>Contate-nos</item>
+        <item>Feedback</item>
     </string-array>
-    <string name="title_activity_sub_funcion_screen">SubFuncionScreen</string>
+
+    <string-array name="disciplinas_funcios">
+        <item>Lista de Disciplinas</item>
+        <item>Verificar requisitos</item>
+    </string-array>
+
 
 </resources>

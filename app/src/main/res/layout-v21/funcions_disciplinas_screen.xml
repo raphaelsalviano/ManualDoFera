@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.ufpb.dispositivosmoveis.manualdofera.FuncionsDisciplinasScreen">
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/funcions_disc"
+        android:theme="@style/AppTheme"
+        android:divider="@color/md_red_A200"/>
+
+
+</LinearLayout>
