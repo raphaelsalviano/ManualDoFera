@@ -15,7 +15,7 @@ public class BDCode{
         tables[1] = "curso(id integer primary key not null, nome varchar not null" +
                 "descricao varchar, disciplina integer," +
                 "FOREIGN KEY(disciplina) REFERENCES disciplinas(id))";
-        tables[2] = "firstOpen(id integer primary key not null, first char not null)";
+        tables[2] = "firstOpen(id integer primary key not null, first char not null, curso integer)";
         return tables;
     }
 
@@ -35,6 +35,10 @@ public class BDCode{
         upgradeTables[1] = "DROP TABLE curso";
         upgradeTables[2] = "DROP TABLE firstOpen";
         return upgradeTables;
+    }
+
+    public String getInsertStart(){
+        return "firstOpen VALUES (002, V,";
     }
 
 }

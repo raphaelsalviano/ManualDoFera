@@ -46,5 +46,6 @@
         <item>Ajuda / FAQ</item>
         <item>Contate-nos</item>
     </string-array>
+    <string name="title_activity_sub_funcion_screen">SubFuncionScreen</string>
 
 </resources>
